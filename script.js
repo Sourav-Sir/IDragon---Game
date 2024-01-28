@@ -39,6 +39,23 @@ function handleKeyEvent(element) {
     }
 }
 
+// Add touchstart event listener
+document.addEventListener('touchstart', function (event) {
+    handleTouchEvent(event);
+});
+
+// Handle touch events
+function handleTouchEvent(event) {
+    // Use event.touches[0] for the first touch
+    // Modify the following lines accordingly
+    // You may need to adjust the conditions based on your specific touch interactions
+
+    if (!gameIsOver) {
+        animateDino();
+    }
+}
+
+
 // Animate the dino
 function animateDino() {
     dino = document.querySelector('.dino');
