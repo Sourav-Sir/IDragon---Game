@@ -3,7 +3,52 @@
     margin: 0;
     padding: 0;
 }
+
+/* Style for the reload button */
+#reloadButton {
+    position: relative;
+    padding: 10px 20px;
+    bottom: 60px;
+    font-size: 30px;
+    font-family: 'Honk', system-ui;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the reload button on hover */
+#reloadButton:hover {
+    background-color: #45a049;
+}
+
+/* Initially hide the button container */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the container height to the full viewport height */
+    visibility: hidden;
+}
+
+/* Show the button container when game over */
+.gameOver {
+    position: relative;
+    top: 63px;
+    font-size: 53px;
+    font-family: 'Honk', system-ui;
+    color: chartreuse;
+    text-align: center;
+    /* visibility: hidden; */
+}
+
+.gameOver.showButton #reloadButtonContainer {
+    visibility: visible;
+}
+
 body{
+    
     background-color: yellow;
     overflow: hidden;
 }
