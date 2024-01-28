@@ -52,14 +52,22 @@ function animateDino() {
 function moveDinoRight() {
     dino = document.querySelector('.dino');
     dinoX = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
-    dino.style.left = dinoX + 112 + "px";
+
+    // Check if the dino is going beyond the right edge
+    if (dinoX < window.innerWidth - 112) {
+        dino.style.left = dinoX + 112 + "px";
+    }
 }
 
 // Move the dino to the left
 function moveDinoLeft() {
     dino = document.querySelector('.dino');
     dinoX = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
-    dino.style.left = (dinoX - 112) + "px";
+
+    // Check if the dino is going beyond the left edge
+    if (dinoX > 0) {
+        dino.style.left = (dinoX - 112) + "px";
+    }
 }
 
 // Main game loop
@@ -91,6 +99,8 @@ function gameLoop() {
                 reloadButtonContainer.style.visibility = 'visible';
                 gameIsOver = true; // Set game over state
             }, 1000);
+            // Apply the hideDino class to make the dino disappear
+        dino.classList.add('hideDino');
         } else if (offSetX < 145 && cross) {
             score += 1;
             updateScore(score);
