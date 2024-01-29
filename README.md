@@ -11,6 +11,8 @@ Briefly describe your Dragon Jump Game. Mention its purpose, key features, and a
 
 ![Demo IMG](https://github.com/Sourav-Sir/IDragon---Game/blob/main/demo.png)
 
+![Demo IMG](https://github.com/Sourav-Sir/IDragon---Game/blob/main/demo_.png)
+
 
 ![Demo GIF](https://github.com/Sourav-Sir/IDragon---Game/blob/main/DEMO.gif)
 
