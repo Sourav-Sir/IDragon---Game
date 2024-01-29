@@ -5,30 +5,6 @@
     padding: 0;
 }
 
-#reloadButton {
-    position: relative;
-    padding: 10px 20px;
-    bottom: 60px;
-    font-size: 30px;
-    font-family: 'Honk', system-ui;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#reloadButton:hover {
-    background-color: #45a049;
-}
-
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    visibility: hidden;
-}
 
 .gameOver {
     position: relative;
@@ -134,3 +110,45 @@ body {
     }
 }
 
+/* CSS for button */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    visibility: hidden;
+}
+.button-74 {
+    background-color: #f4e403;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-74:hover {
+    background-color: #fff;
+  }
+  
+  .button-74:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .button-74 {
+      min-width: 120px;
+      padding: 0 25px;
+    }
+  }
